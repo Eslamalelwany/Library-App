@@ -96,7 +96,7 @@ return (
                         onClick={() => {
                             dispatch(addToWantToRead(e.key))
                             dispatch(wantReadArray(e.key))
-                            isSaved.includes(e.key) ? toast.error('Removed from favourites!') : toast.success('Added to favourites!') 
+                            isSaved.includes(e.key) ? toast.error('Removed from want to read!') : toast.success('Added to want to read!') 
                         }}
                         title="Want to Read"
                         className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm flex items-center justify-center transition-all duration-200 hover:scale-110"
@@ -109,7 +109,7 @@ return (
                         onClick={() => {
                             dispatch(addToMakeAsRead(e.key))
                             dispatch(isReaded(e.key))
-                            isReadeddd.includes(e.key) ? toast.error('Removed from favourites!') : toast.success('Added to favourites!') 
+                            isReadeddd.includes(e.key) ? toast.error('Removed from Make as read!') : toast.success('Added to Make as read!') 
                         }}
                         title="Mark as Read"
                         
