@@ -82,7 +82,7 @@ const booksSlice = createSlice({
                 state.wantToRead.push({...wantToR})
             }
             else if (wantToR) {
-                state.makeAsRead = state.wantToRead.filter(e => e.key !== wantToR.key);
+                state.wantToRead = state.wantToRead.filter(e => e.key !== wantToR.key);
             }
             // console.log(current(state.wantToRead))
         },
