@@ -68,6 +68,7 @@ return (
             <div className="relative h-52 bg-[#EDE9E0] overflow-hidden">
                 {coverUrl ? (
                     <img
+                        loading="lazy"
                         src={coverUrl}
                         alt={e.title}
                         className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
