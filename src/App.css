@@ -188,7 +188,9 @@
 @import "tailwindcss";
 
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 .contain:hover{
