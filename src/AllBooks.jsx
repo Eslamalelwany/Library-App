@@ -84,7 +84,7 @@ return (
 
                 {/* Year badge */}
                 {e.first_publish_year && (
-                    <span className="absolute top-3 right-3 bg-black/60 text-white text-[11px] font-medium px-2 py-1 rounded-full backdrop-blur-sm">
+                    <span className="absolute top-3 right-3 bg-black/60 text-white text-[11px] font-medium px-2 py-1 rounded-full">
                         {e.first_publish_year}
                     </span>
                 )}
@@ -100,7 +100,7 @@ return (
                             isSaved.includes(e.key) ? toast.error('Removed from want to read!') : toast.success('Added to want to read!') 
                         }}
                         title="Want to Read"
-                        className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm flex items-center justify-center transition-all duration-200 hover:scale-110"
+                        className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center transition-all duration-200 hover:scale-110"
                     >
                         <Bookmark size={18}  color={isSaved.includes(e.key) ? "#A0522D": "black"} fill = {isSaved.includes(e.key) ? "#A0522D": "white"} className="text-white" />
                     </button>
@@ -114,7 +114,7 @@ return (
                         }}
                         title="Mark as Read"
                         
-                        className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm flex items-center justify-center transition-all duration-200 hover:scale-110"
+                        className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center transition-all duration-200 hover:scale-110"
                     >
                         <CircleCheck  size={18} color= {isReadeddd.includes(e.key) ? "green": "black"}   fill = {isReadeddd.includes(e.key) ? "white": "white"}  className=""/>
                     </button>
@@ -127,7 +127,7 @@ return (
                             isFavourite.includes(e.key) ? toast.error('Removed from favourites!') : toast.success('Added to favourites!') 
                         }}
                         title="Add to Favourites"
-                        className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm flex items-center justify-center transition-all duration-200 hover:scale-110"
+                        className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/40  flex items-center justify-center transition-all duration-200 hover:scale-110"
                     >
                         <Star size={18}   color= {isFavourite.includes(e.key) ? "#E89951": "black"} fill = {isFavourite.includes(e.key) ? "#E89951": "white"} className="text-white" />
                     </button>
